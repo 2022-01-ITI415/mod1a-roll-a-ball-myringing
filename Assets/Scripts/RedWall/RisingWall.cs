@@ -18,5 +18,10 @@ public class RisingWall : MonoBehaviour
             door.SetActive(false);
             message.SetActive(true);
         }
+        else if (button1.GetComponent<ButtonCotroller>().buttonSwitch != 1 || button2.GetComponent<ButtonCotroller>().buttonSwitch != 1)
+        {
+            door.SetActive(true);
+            message.SetActive(false);
+        }
     }
 }
